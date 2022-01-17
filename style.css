@@ -99,3 +99,8 @@ body{
 footer{
   margin-top:auto; 
 }
+
+.pravljice {
+    display: flex;
+    justify-content: center;
+}

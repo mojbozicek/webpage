@@ -1,0 +1,93 @@
+/* 
+    Reset all the "User-Agent-Stylesheet" styles, 
+    except for the 'display' property 
+*/
+@font-face {
+    font-family: myFirstFont;
+    src: url(LobsterTwo-Regular.ttf);
+    font-weight: bold;
+}
+
+* {
+    all: unset;
+    display: revert;
+    font-family: myFirstFont;
+}
+
+
+.header {
+    background-color: #bb2528;
+    height: 140px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 140px;
+}
+
+.main {
+    margin: auto;
+    margin-top: 24px;
+    max-width: 960px;
+}
+
+.second {
+
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #555;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+footer {
+    background-color: #bb2528;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    padding: 24px 0;
+}
+
+.slika {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+.slika img {
+    max-height: 240px;
+}
+
+body{ height:100vh; margin:0; }
+
+/* Trick */
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+footer{
+  margin-top:auto; 
+}

@@ -9,15 +9,15 @@
 }
 
 * {
-    all: unset;
-    display: revert;
+    /* all: unset; */
+    /* display: revert; */
     font-family: myFirstFont;
 }
 
 
 .header {
     background-color: #bb2528;
-    height: 140px;
+    min-height: 140px;
     background-image: url('logo.png');
     background-repeat: no-repeat;
     background-position-x: center;
@@ -27,8 +27,9 @@
 
 .main {
     margin: auto;
-    margin-top: 24px;
+    margin: 24px auto;
     max-width: 960px;
+
 }
 
 .second {
@@ -42,6 +43,7 @@ p {
 }
 
 a {
+    color: black;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -61,6 +63,11 @@ h2 {
     text-align: center;
 }
 
+.player {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: #bb2528;
     display: flex;
@@ -69,6 +76,7 @@ footer {
     color: #fff;
     flex-direction: column;
     padding: 24px 0;
+    margin: 24px 0;
 }
 
 .slika {

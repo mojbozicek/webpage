@@ -23,6 +23,7 @@
     background-position-x: center;
     background-position-y: center;
     background-size: 140px;
+    box-shadow: 0px 2px 6px 2px #ccc;
 }
 
 .main {
@@ -77,6 +78,10 @@ footer {
     flex-direction: column;
     padding: 24px 0;
     margin: 24px 0;
+}
+
+footer a {
+ color: #fff;   
 }
 
 .slika {

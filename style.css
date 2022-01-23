@@ -11,7 +11,7 @@
 * {
     /* all: unset; */
     /* display: revert; */
-    font-family: myFirstFont;
+    font-family: myFirstFont, Georgia, serif;
 }
 
 :root {

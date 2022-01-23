@@ -20,18 +20,21 @@
 
 .header {
     background-color: #bb2528;
-    min-height: 140px;
-    background-image: url('logo.png');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: 140px;
+    min-height: 156px;
     box-shadow: 0px 2px 6px 2px #ccc;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 144px;
 }
 
 .main {
     margin: 24px auto 96px;
-    max-width: 960px;
+    /* max-width: 960px; */
 }
 
 p {
@@ -81,13 +84,14 @@ footer a {
  color: #fff;   
 }
 
-.slika {
+.picture {
     display: flex;
     justify-content: center;
     margin-bottom: 48px;
 }
-.slika img {
-    max-height: 240px;
+.picture img {
+    max-height: 320px;
+    max-width: 90vw;
 }
 
 body{ height:100vh; margin:0; }
@@ -114,32 +118,30 @@ footer{
     align-items: center;
 }
 
+.song iframe {
+    max-width: 90vw;
+}
+
 .logos {
     margin: 0 0 24px;
     display: flex;
     flex: 1
 }
 
-.logos > * {
+.logos > a {
     margin: 0 8px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: var(--logo-size);
-    width: var(--logo-size);
-    height: var(--logo-size);
     transition: opacity 0.15s ease-in-out;
 }
 
-.logos > *:hover {
+.logos > a:hover {
     opacity: 0.7;
 }
 
-.fb-logo {
-    background-image: url('fb.png');
+.logos > .ig {
+    filter: invert(1);
 }
 
-.ig-logo {
-    background-image: url('ig.png');
-    filter: invert(1);
+.logos img {
+    width: var(--logo-size);
+    height: var(--logo-size);
 }

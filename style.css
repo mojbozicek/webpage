@@ -14,6 +14,9 @@
     font-family: myFirstFont;
 }
 
+:root {
+    --logo-size: 32px;
+  }
 
 .header {
     background-color: #bb2528;
@@ -27,14 +30,8 @@
 }
 
 .main {
-    margin: auto;
-    margin: 24px auto;
+    margin: 24px auto 96px;
     max-width: 960px;
-
-}
-
-.second {
-
 }
 
 p {
@@ -50,7 +47,7 @@ a {
 }
 
 a:hover {
-    color: #555;
+    opacity: 0.80;
 }
 
 h1 {
@@ -102,10 +99,47 @@ body{
 }
 
 footer{
-  margin-top:auto; 
+  margin-top: auto; 
 }
 
 .pravljice {
     display: flex;
     justify-content: center;
+}
+
+.song, .story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos {
+    margin: 0 0 24px;
+    display: flex;
+    flex: 1
+}
+
+.logos > * {
+    margin: 0 8px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: var(--logo-size);
+    width: var(--logo-size);
+    height: var(--logo-size);
+    transition: opacity 0.15s ease-in-out;
+}
+
+.logos > *:hover {
+    opacity: 0.7;
+}
+
+.fb-logo {
+    background-image: url('fb.png');
+}
+
+.ig-logo {
+    background-image: url('ig.png');
+    filter: invert(1);
 }

@@ -2,10 +2,18 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214460758-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-214460758-1');
+    </script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?ver=2">
     <title>MojBožiček.si</title>
     <script src="https://apis.google.com/js/platform.js"></script>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -25,23 +33,22 @@
                 Če mu želite sporočiti kaj posebnega pa pišite na <a
                     href="mailto:info@mojbozicek.si">info@mojbozicek.si</a>
             </p>
-            <h2>Pesem</h2>
-            <div class="player">
-                <audio controls>
-                    <source src="song.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>         
+            <div class="song">
+                <h2>Pesem</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2CMzY8AMJ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <h2>Pravljice</h2>
-            <div class="pravljice">
-
+            <div class="story">
+                <h2>Pravljice</h2>
                 <div class="g-ytsubscribe" data-channelid="UChygHOPRarv9Yu3mA-AwQcw" data-layout="full" data-count="hidden"></div>
             </div>
         </section>
         <footer>
+            <div class="logos" >
+                <a href="https://www.facebook.com/bozicekmoj/" class="fb-logo"></a>
+                <a href="https://www.instagram.com/mojboziceksi/" class="ig-logo"></a>
+            </div>
             <div>© 2022, MojBožiček.si</div>
             <div>Kontakt: <a href="mailto:info@mojbozicek.si">info@mojbozicek.si</a></div>
         </footer>
 </body>
-
 </html>

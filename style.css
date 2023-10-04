@@ -93,12 +93,15 @@ footer a {
 .picture {
     display: flex;
     justify-content: center;
-    margin-bottom: 48px;
 }
 
 .picture img {
-    max-height: 320px;
+    max-height: 480px;
     max-width: 90vw;
+}
+
+.picture + p {
+    margin-top: 48px;
 }
 
 .song, .story {
